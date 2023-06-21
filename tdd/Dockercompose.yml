@@ -1,0 +1,32 @@
+##################################################
+# Author    : Luciano Donizeti da Silva - Luck
+# Date      : 17/03/2023
+# Updated   :
+# Updated by:
+####################################################
+version: "3.8"
+
+services: 
+# Sonarqube
+    sonarqube:
+        image: sonarqube:8.9-community
+        container_name: sonarqube
+
+        tty: true
+
+        volumes:
+            - .\sonarqube/data:/opt/sonarqube/data
+            - .\sonarqube/logs:/opt/sonarqube/logs
+            - .\sonarqube/extensions:/opt/sonarqube/extensions
+        ports:
+            - 9000:9000
+        expose:
+            - 9000
+
+        networks: 
+            - sonarqube-net
+networks:
+  sonarqube-net:
+    name: sonarqube-net
+    driver: bridge
+

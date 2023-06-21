@@ -1,0 +1,43 @@
+#Maven
+tdd/target/
+tdd/pom.xml.tag
+tdd/pom.xml.releaseBackup
+tdd/pom.xml.versionsBackup
+tdd/release.properties
+tdd/.flattened-pom.xml
+
+# Eclipse
+tdd/.project
+tdd/.classpath
+tdd/.settings/
+tdd/bin/
+
+# IntelliJ
+tdd/.idea
+tdd/*.ipr
+tdd/*.iml
+tdd/*.iws
+
+# NetBeans
+tdd/nb-configuration.xml
+
+# Visual Studio Code
+tdd/.vscode
+tdd/.factorypath
+
+# OSX
+tdd/.DS_Store
+
+# Vim
+tdd/*.swp
+tdd/*.swo
+
+# patch
+tdd/*.orig
+tdd/*.rej
+
+# Local environment
+tdd/.env
+
+# Plugin directory
+tdd/.quarkus/cli/plugins/
